@@ -1,0 +1,61 @@
+import random
+
+word = ["horse", "apple", "tower", "chick", "fruit", "dinos", "sleep", "built", "roost", "spear", "poppy"] # Edit these.
+word = random.choice(word)
+correct = word
+
+print("Welcome to my Word guessing game! You get 5 guesses and then the moment of truth")
+print("Word list: horse, apple, tower, chick, fruit, dinos, sleep, built, roost, spear\nand poppy")
+guess1 = input("Start guessing a five letter word or one letter: ")
+
+if guess1 == word:
+    print("You won! The word was " + word)
+elif guess1 in word:
+    print("There is " + guess1.upper() + " in this word!")
+elif guess1 not in word:
+    print("There is no " + guess1.upper() + " in this word. -1 Life")
+
+guess2 = input("Start guessing a five letter word or one letter: ")
+
+if guess2 == word:
+    print("You won! The word was " + word)
+elif guess2 in word:
+    print("There is " + guess2.upper() + " in this word!")
+elif guess2 not in word:
+    print("There is no " + guess2.upper() + " in this word. -1 Life")
+
+guess3 = input("Start guessing a five letter word or one letter: ")
+
+if guess3 == word:
+    print("You won! The word was " + word)
+elif guess3 in word:
+    print("There is " + guess3.upper() + " in this word!")
+elif guess3 not in word:
+    print("There is no " + guess3.upper() + " in this word. -1 Life")
+
+guess4 = input("Start guessing a five letter word or one letter: ")
+
+if guess4 == word:
+    print("You won! The word was " + word)
+elif guess4 in word:
+    print("There is " + guess4.upper() + " in this word!")
+elif guess4 not in word:
+    print("There is no " + guess4.upper() + " in this word. -1 Life")
+
+guess5 = input("Final guess! Start guessing a five letter word or one letter: ")
+
+if guess5 == word:
+    print("You won! The word was " + word)
+elif guess5 in word:
+    print("There is " + guess5.upper() + " in this word!")
+elif guess5 not in word:
+    print("There is no " + guess5.upper() + " in this word. -1 Life")
+
+print("Moment of truth!")
+
+finalguess = input("What is the word?: ")
+
+if finalguess == word:
+    print("You won! Thanks for playing! The word was " + word)
+else:
+    print("Oh no. You just lost... Better luck next time... The word was " + word)
