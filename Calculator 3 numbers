@@ -1,0 +1,29 @@
+def plus(x, y, z):
+    return x + y + z
+def minus(x, y, z):
+    return x - y - z
+def times(x, y, z):
+    return x * y * z
+def divide(x, y, z):
+    return x / y / z
+
+print("Hello. Welcome to my 3 Number calculator!")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiply")
+print("4. Division")
+operator = input("Enter Operator (1/2/3/4): ")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if operator == '1':
+    print (num1 + num2 + num3)
+elif operator == '2':
+    print(num1 - num2 - num3)
+elif operator == '3':
+    print(num1 * num2 * num3)
+elif operator == '4':
+    print(num1 / num2 / num3)
+else:
+    print("Invalid Operator")
